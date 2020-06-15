@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&family=Roboto&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color1: rgb(22, 35, 50);
+  --color2: rgb(161, 219, 255);
+  --color3: #f3a36d;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--color1);
+  color: var(--color2);
+  padding: 3rem;
+}
+
+.heading {
+  margin-top: 1.4rem;
+  text-align: center;
+  font-family: "MuseoModerno", cursive;
+  font-size: 3rem;
+  letter-spacing: 0.2em;
+}
+.underline {
+  margin: 0.4rem auto 3rem;
+  width: 300px;
+  height: 0.3rem;
+  background-color: var(--color3);
+}
+.buttons {
+  width: 73vw;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  gap: 1rem 1.6rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+.button {
+  text-transform: capitalize;
+  list-style: none;
+  padding: 0.6rem;
+  outline: none;
+  border: 2px solid var(--color3);
+  border-radius: 0.6rem;
+  color: var(--color3);
+  background-color: transparent;
+}
+.button:hover {
+  border-color: var(--color2);
+  color: var(--color2);
+  box-shadow: 0 0 0.2rem var(--color2);
+}
+
+.wrapper {
+  margin-top: 3rem;
+  display: grid;
+  column-gap: 2.6rem;
+  row-gap: 3.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.card {
+  width: 100%;
+}
+.card__img {
+  box-shadow: 0 0 1.6rem -0.4rem var(--color2);
+  border-radius: 0.6rem;
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  object-position: top left;
+}
+.card__title {
+  font-family: "MuseoModerno", cursive;
+  padding: 1rem;
+  border-bottom: 1px solid #555;
+  margin-bottom: 1rem;
+  letter-spacing: 0.16em;
+  text-transform: capitalize;
+}
+.card__text {
+  letter-spacing: 0.1em;
+}
+footer {
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 600px;
+  margin: 5rem auto 0;
+  border: 2px solid var(--color2);
+  border-radius: 0.4em;
+  text-align: center;
+  box-shadow: 0 0 0.6rem var(--color3);
+  letter-spacing: 0.1em;
+}
